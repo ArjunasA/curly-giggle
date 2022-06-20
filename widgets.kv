@@ -3,13 +3,21 @@
 		orientation: 'vertical'
 		size: root.width, root.height
 		Screen:
+			MDLabel:
+				id:text
+				halign:'center'
+				pos_hint:{'center_x':0.5,'center_y':0.3}
+				text:''
 			MDToolbar:
 				title:'Calculator'
 				pos_hint:{'top':1}
 			MDTextField:
+				id:input
 				hint_text: 'Enter an Arithemetic sequence'
 				size_hint_x:0.8
 				pos_hint: {'center_x':0.5,'center_y':0.5}
 			MDFillRoundFlatButton:
 				pos_hint: {'center_x':0.5,'center_y':0.4}	 
 				text: 'Details'
+				on_press:root.show()
+	

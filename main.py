@@ -6,7 +6,10 @@ from kivy.lang import Builder
 Builder.load_file('widgets.kv')
 
 class AppLayout(Widget):
-	pass
+	def show(self):
+		list = []
+		list.append(self.ids.input.text.split(','))
+		self.ids.text.text = str(list)
 	
 class CalculatorApp(MDApp):
 	def build(self):
