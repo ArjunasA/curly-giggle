@@ -9,7 +9,11 @@ class AppLayout(Widget):
 	def show(self):
 		list = []
 		list.append(self.ids.input.text.split(','))
-		self.ids.text.text = str(list)
+		f = int(list[0][0])
+		d = int(list[0][1])-int(list[0][0])
+		f_d = f-d
+		expression = str(d)+"n+"+str(f_d)
+		self.ids.text.text = expression
 	
 class CalculatorApp(MDApp):
 	def build(self):
