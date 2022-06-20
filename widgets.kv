@@ -4,7 +4,12 @@
 		size: root.width, root.height
 		Screen:
 			MDToolbar:
-				title:'Hello'
+				title:'Calculator'
 				pos_hint:{'top':1}
-			
-		 	 
+			MDTextField:
+				hint_text: 'Enter an Arithemetic sequence'
+				size_hint_x:0.8
+				pos_hint: {'center_x':0.5,'center_y':0.5}
+			MDFillRoundFlatButton:
+				pos_hint: {'center_x':0.5,'center_y':0.4}	 
+				text: 'Details'
