@@ -12,8 +12,9 @@ class AppLayout(Widget):
 		f = int(list[0][0])
 		d = int(list[0][1])-int(list[0][0])
 		f_d = f-d
-		expression = str(d)+"n+"+str(f_d)
-		self.ids.text.text = expression
+		expression = "Algebraic expression:"+str(d)+"n+"+str(f_d)
+		commondiff = "common difference:"+str(d)
+		self.ids.text.text = expression+"\n"+commondiff
 	
 class CalculatorApp(MDApp):
 	def build(self):
